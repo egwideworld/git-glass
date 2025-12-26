@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <title>GitGlass - Wiki de Comandos Git</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <div class="background-effects">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1 class="logo">&trade;GitGlass</h1>
+            <p class="subtitle">Wiki Completa de Comandos Git</p>
+        </header>
+
+        <div class="search-container">
+            <input 
+                type="text" 
+                class="search-box" 
+                id="searchInput" 
+                placeholder="🔍 Pesquisar comandos..."
+                autocomplete="off"
+            >
+        </div>
+
+        <div class="categories" id="categories"></div>
+
+        <div class="commands-grid" id="commandsGrid"></div>
+
+        <div class="no-results hidden" id="noResults">
+            <div class="no-results-icon">🔍</div>
+            <p>Nenhum comando encontrado</p>
+        </div>
+
+        <div class="pagination" id="pagination">
+            <button class="pagination-btn" id="prevBtn">
+                <span>← Anterior</span>
+            </button>
+            <div class="pagination-info" id="paginationInfo"></div>
+            <button class="pagination-btn" id="nextBtn">
+                <span>Próximo →</span>
+            </button>
+        </div>
+
+        <footer>
+            <p>&copy;GitGlass - Desenvolvido com Glassmorphism</p>
+            <p>@<a href="https://github.com/egwideworld" target="_blank" rel="external">Eduardo Guilherme</a> - Todos os Direitos Reservados.</p>
+        </footer>
+    </div>
+
+    <script src="./interaction/app.js"></script>
+    <script src="./interaction/data.js"></script>
+</body>
+</html>
